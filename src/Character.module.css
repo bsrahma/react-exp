@@ -1,0 +1,101 @@
+.container {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .container {
+    min-height: 100vh;
+    max-width: 70vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2rem;
+  color: rgb(51, 38, 112);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 8px;
+  border: 1px solid rgb(120, 116, 172);
+  padding: 0;
+}
+
+@media (max-width: 600px) {
+  .profile {
+    flex-direction: column;
+    padding: 1rem;
+  }
+}
+
+.profileDetails {
+  padding-right: 2rem;
+}
+
+.profileDetails ul {
+  list-style-type: none;
+  min-width: 270px;
+}
+
+.profileDetails ul li strong {
+  color: rgba(23, 20, 26, 0.89);
+  font-weight: 700;
+  margin-right: 3px;
+}
+.profileStatus {
+  float: right;
+  color: white;
+  border-radius: 5px;
+  margin-top: 15px;
+  padding: 3px 10px;
+}
+.statusDead {
+  background: red;
+  border: 1px red solid;
+}
+.statusAlive {
+  background: green;
+  border: 1px green solid;
+}
+.statusUnknown {
+  background: black;
+  border: 1px black solid;
+}
+
+@media (max-width: 600px) {
+  .profileImage {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .profileDetails,
+  .profileDetails ul {
+    padding: 0;
+  }
+}
+
+.back button {
+  color: blueviolet;
+  text-decoration: underline;
+  background-color: transparent;
+  border:none;
+  cursor: pointer;
+}
